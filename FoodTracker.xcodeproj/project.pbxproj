@@ -13,6 +13,10 @@
 		09EAE2BF1CFE440800A194B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09EAE2BE1CFE440800A194B4 /* Assets.xcassets */; };
 		09EAE2C21CFE440800A194B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EAE2C01CFE440800A194B4 /* LaunchScreen.storyboard */; };
 		09EAE2CD1CFE440800A194B4 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAE2CC1CFE440800A194B4 /* FoodTrackerTests.swift */; };
+		09EAE2D81CFF42D000A194B4 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAE2D71CFF42D000A194B4 /* RatingControl.swift */; };
+		09EAE2D91CFF42D000A194B4 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAE2D71CFF42D000A194B4 /* RatingControl.swift */; };
+		09EAE2DB1CFF684D00A194B4 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAE2DA1CFF684D00A194B4 /* Meal.swift */; };
+		09EAE2DC1CFF684D00A194B4 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAE2DA1CFF684D00A194B4 /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 		09EAE2C81CFE440800A194B4 /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EAE2CC1CFE440800A194B4 /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		09EAE2CE1CFE440800A194B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09EAE2D71CFF42D000A194B4 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		09EAE2DA1CFF684D00A194B4 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +86,9 @@
 				09EAE2B71CFE440800A194B4 /* AppDelegate.swift */,
 				09EAE2B91CFE440800A194B4 /* ViewController.swift */,
 				09EAE2BB1CFE440800A194B4 /* Main.storyboard */,
+				09EAE2DA1CFF684D00A194B4 /* Meal.swift */,
 				09EAE2BE1CFE440800A194B4 /* Assets.xcassets */,
+				09EAE2D71CFF42D000A194B4 /* RatingControl.swift */,
 				09EAE2C01CFE440800A194B4 /* LaunchScreen.storyboard */,
 				09EAE2C31CFE440800A194B4 /* Info.plist */,
 			);
@@ -146,6 +154,7 @@
 				TargetAttributes = {
 					09EAE2B31CFE440800A194B4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8D3PK6N37S;
 					};
 					09EAE2C71CFE440800A194B4 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -197,7 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09EAE2DB1CFF684D00A194B4 /* Meal.swift in Sources */,
 				09EAE2BA1CFE440800A194B4 /* ViewController.swift in Sources */,
+				09EAE2D81CFF42D000A194B4 /* RatingControl.swift in Sources */,
 				09EAE2B81CFE440800A194B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09EAE2D91CFF42D000A194B4 /* RatingControl.swift in Sources */,
+				09EAE2DC1CFF684D00A194B4 /* Meal.swift in Sources */,
 				09EAE2CD1CFE440800A194B4 /* FoodTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,10 +342,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FoodTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hanchen.FoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -340,10 +356,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FoodTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hanchen.FoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
